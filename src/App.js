@@ -10,12 +10,13 @@ import Profile from "./views/Profile";
 import ExternalApi from "./views/ExternalApi";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
-import CreateAccount from './components/createaccount04';
+import Create from './components/createaccount05';
 import LoginForm from './components/LoginForm';
 import Deposit from './components/deposit02';
 import Withdraw from './components/withdraw03';
 import Balance from './components/balance';
-import AllData from './components/alldata02';
+// import AllData from './components/alldata02';
+import RecordList from './components/alldata03-axios';
 import Helpme from './components/help';
 // styles
 import "./App.css";
@@ -47,12 +48,12 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/profile" component={Profile} />
             <Route path="/external-api" component={ExternalApi} />
-            <Route path="/createaccount04/" component={CreateAccount} />
+            <Route path="/createaccount05/" component={Create} />
             <Route path="/LoginForm/" component={LoginForm} />
             <Route path="/balance/" component={Balance} />
             <Route path="/deposit02/" component={Deposit} />
             <Route path="/withdraw03/" component={Withdraw} />
-            <Route path="/alldata02/" component={AllData} />
+            <Route path="/alldata03-axios/" component={RecordList} />
             <Route path="/help/" component={Helpme} />
           </Switch>
         </Container>

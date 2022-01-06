@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import axie from '../images/7711009.png';
 
 import {
   Collapse,
@@ -39,7 +40,14 @@ const NavBar = () => {
     <div className="nav-container">
       <Navbar color="light" light expand="md">
         <Container>
-          <NavbarBrand className="logo" />
+          <NavbarBrand>      
+          <img
+        src={axie}
+        width="55"
+        height="45"
+        className="d-inline-block align-top"
+        alt="Axie 7711009"
+      /> </NavbarBrand> 
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>

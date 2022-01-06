@@ -4,17 +4,26 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "server:dev": "nodemon server.js",
+    "api-server": "node api-server.js",
+    "api-server:dev": "nodemon api-server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "G Chao haha.axie@gmail.com",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "jwks-rsa": "^1.4.0",
+    "helmet": "^3.18.0",
     "mongodb": "^3.6.6",
-    "mongoose": "^6.1.5"
+    "mongoose": "^6.1.5",
+    "morgan": "^1.9.1"
   },
-  "description": ""
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "description": "server connection to Mongo Atlas"
 }

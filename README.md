@@ -8,6 +8,14 @@ on frontend (root) run$ npm run spa
 
 need to integrate the auth with MongoDB customer collection next. Need more exploration on the auth api also.
 
+To start the application
+docker-compose -f docker-compose.dev.yml up --build
+
+(at the moment the react part has dependencies issues and won't dockerise)
+To Completely stop the application, Run both commands
+- CTRL+C
+ - docker-compose -f docker-compose.dev.yml down
+
 This sample demonstrates the integration of [Auth0 React SDK](https://github.com/auth0/auth0-react) into a React application created using [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html). The sample is a companion to the [Auth0 React SDK Quickstart](https://auth0.com/docs/quickstart/spa/react).
 
 This sample demonstrates the following use cases:

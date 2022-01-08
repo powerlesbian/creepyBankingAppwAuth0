@@ -4,7 +4,6 @@
   "private": true,
   "homepage": ".",
   "scripts": {
-
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jest-environment-jsdom-sixteen",
@@ -22,10 +21,7 @@
     "express": "^4.16.4",
     "express-jwt": "^6.0.0",
     "formik": "^2.2.9",
-
     "highlight.js": "^10.7.3",
-
-
     "npm-run-all": "^4.1.5",
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.0",

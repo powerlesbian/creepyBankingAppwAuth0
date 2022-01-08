@@ -40,7 +40,7 @@ const NavBar = () => {
     <div className="nav-container">
       <Navbar color="light" light expand="md">
         <Container>
-          <NavbarBrand href="">      
+          <NavbarBrand>      
           <img
         src={axie}
         width="55"

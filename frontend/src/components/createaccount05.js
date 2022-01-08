@@ -59,7 +59,7 @@ export default class Create extends Component {
     };
 
     axios
-      .post("http://localhost:5050/record/add", newperson)
+      .post("http://128.199.160.31:5050/record/add", newperson)
       .then((res) => console.log(res.data));
 
     // We will empty the state after posting the data to the database
@@ -69,6 +69,7 @@ export default class Create extends Component {
         user_password: "",
         user_balance: ""
     });
+    alert(`Congrats! On creating a new account with us. Our bank is very transparent, all customers can check account info in All Data.`);
   }
 
   // This following section will display the form that takes the input from the user.
@@ -96,7 +97,7 @@ export default class Create extends Component {
             />
           </div>
           <div className="form-group">
-            <label>Person's Password: </label>
+            <label>Your password: </label>
             <input
               type="text"
               className="form-control"
